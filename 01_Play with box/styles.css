@@ -1,0 +1,72 @@
+.container {
+    text-align: center;
+    background-color: rgb(238, 238, 238);
+    padding: 0px 20px 10px 20px;
+  }
+  .boxcontainer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .box {
+    width: 100px;
+    height: 100px;
+    border: 2px solid rgb(0, 0, 0);
+    margin: 25px;
+    padding: 5px;
+  }
+  
+  .reset-btn {
+    color: rgb(215, 33, 33);
+    background-color: yellow;
+    font-weight: bold;
+    border: 2px solid rgb(241, 85, 85);
+    border-radius: 5px;
+  }
+  .randomall-btn {
+    color: rgb(148, 70, 231);
+    background-color: rgb(116, 228, 228);
+    border: 2px solid rgb(115, 185, 242);
+    font-weight: bold;
+    border-radius: 5px;
+  }
+  .randominput-btn {
+    color: rgb(58, 45, 235);
+    background-color: rgb(11, 187, 20);
+    border: 2px solid rgb(92, 1, 134);
+    font-weight: bold;
+    border-radius: 5px;
+  }
+  .submit-btn {
+    color: rgb(101, 209, 80);
+    background-color: rgb(8, 63, 228);
+    border: 2px solid rgb(41, 6, 98);
+    font-weight: bold;
+    border-radius: 5px;
+  }
+  input {
+    border-radius: 5px;
+    border: 1px solid #9a9a9a;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding: 10px 0px 10px 5px;
+  }
+  input {
+    font-size: 15px;
+  }
+  label {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+  button {
+    margin: 0px 10px;
+    padding: 5px;
+  }
+  .submit-btn:active {
+    transform: scale(0.9);
+  }
+  .input-adjust {
+    text-align: center;
+    align-items: flex-start;
+    height: auto;
+  }
+  

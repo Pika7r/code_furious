@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(228, 228, 228);
+        }
+        .home {
+            display: flex;
+            margin: 40px;
+            gap: 40px;
+        }
+
+        .container {
+            width: fit-content;
+            perspective: 1000px;
+        }
+
+        .flip-card {
+            width: 300px;
+            height: 300px;
+            position: relative;
+            transition: transform 0.7s linear;
+            transform-style: preserve-3d;
+        }
+        
+        .flip-card-front {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0px;
+        }
+
+        .flip-card-back {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0px;
+            background: linear-gradient(45deg, rgb(0, 0, 0), rgba(244, 1, 1, 0.885), black);
+            color: white;
+            transform: rotateY(180deg);
+            backface-visibility: hidden;
+            border-radius: 5px;
+
+        }
+
+        .flip-card-back2 {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0px;
+            background: linear-gradient(45deg, rgba(0, 0, 0, 0.885), rgba(1, 195, 244, 0.885), rgba(0, 0, 0, 0.885));
+            color: white;
+            transform: rotateY(180deg);
+            border-radius: 5px;
+            backface-visibility: hidden;
+        }
+        .flip-card-back3 {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0px;
+            background: linear-gradient(45deg, rgba(0, 0, 0, 0.885), rgb(103 74 58), rgba(0, 0, 0, 0.885));
+            color: white;
+            transform: rotateY(180deg);
+            backface-visibility: hidden;
+            border-radius: 5px;
+        }
+        .flip-card-back3 > img{
+            object-position: right center;
+        }
+        .container:hover .flip-card {
+            transform: rotateY(180deg);
+        }
+
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+        }
+
+        h4 {
+            text-align: center;
+            margin: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="home">
+
+
+        <div class="container">
+            <div class="flip-card">
+                <div class="flip-card-front"><img
+                        src="https://stimg.cardekho.com/images/carexteriorimages/930x620/Lamborghini/Huracan-EVO/10643/1690010999692/front-left-side-47.jpg"
+                        alt=""></div>
+                <div class="flip-card-back">
+                    <h4>Key Specifications of Lamborghini Huracan</h4>
+                    <pre> ARAI Mileage - 11.24 kmpl
+
+ Fuel Type - Petrol
+
+ Engine Displacement - 5204 cc
+
+ No. of Cylinders - 10
+
+ Max Power - 640bhp@8000rpm
+
+ Max Torque - 600Nm@6500rpm
+
+ Seating Capacity - 2
+
+ Fuel Tank Capacity - 90 Litres</pre>
+
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="flip-card">
+                <div class="flip-card-front"><img src="https://www.rolls-roycemotorcars.com/content/dam/rrmc/marketUK/rollsroycemotorcars_com/phantom-series-ii-in-detail/page-properties/01_HERO_DESKTOP-min.jpg/jcr:content/renditions/cq5dam.web.1920.webp" alt="">
+                </div>
+                <div class="flip-card-back2">
+                    <h4>Key Specifications of Lamborghini Huracan</h4>
+                    <pre> ARAI Mileage - 11.24 kmpl
+
+ Fuel Type - Petrol
+
+ Engine Displacement - 5204 cc
+
+ No. of Cylinders - 10
+
+ Max Power - 640bhp@8000rpm
+
+ Max Torque - 600Nm@6500rpm
+
+ Seating Capacity - 2
+
+ Fuel Tank Capacity - 90 Litres</pre>
+
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="flip-card">
+                <div class="flip-card-front"><img src="https://i.ytimg.com/vi/K1N-3NkFmkk/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLB-SDjifm0dZxCYvADahCps3PL6Ag" alt="">
+                </div>
+                <div class="flip-card-back3">
+                    <h4>Key Specifications of Lamborghini Huracan</h4>
+                    <pre> ARAI Mileage - 11.24 kmpl
+
+ Fuel Type - Petrol
+
+ Engine Displacement - 5204 cc
+
+ No. of Cylinders - 10
+
+ Max Power - 640bhp@8000rpm
+
+ Max Torque - 600Nm@6500rpm
+
+ Seating Capacity - 2
+
+ Fuel Tank Capacity - 90 Litres</pre>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

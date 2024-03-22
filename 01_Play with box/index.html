@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  
+  <div class="container">
+
+    <div class="form">
+      <h1>Play with Box</h1>
+      <div class="boxcontainer">
+        <div class="box" id="box1"></div>
+      </div>
+      <div class="input-adjust">
+        <label for="submit-btn">Change box color:-</label>
+        <input type="text" id="colorinput" />
+        <button class="submit-btn" onclick="change1()">Submit</button>
+        <button class="randominput-btn" onclick="rand1()">Random</button>
+      </div>
+      <hr>
+      <br>
+      <div class="input-adjust">
+        <label for="submit-btn">Change border color:-</label>
+        <input type="text" id="bcolorinput">
+        <button class="submit-btn" onclick="change2()">Submit</button>
+        <button class="randominput-btn" onclick="rand2()">Random</button>
+      </div>
+      <hr>
+      <br>
+      <div class="input-adjust">
+        <label for="cbr">change border radius:-</label>
+        <input type="number" class="cbr" id="bradius">
+        <button class="submit-btn" onclick="change3()">Submit</button>
+        <button class="randominput-btn" onclick="rand3()">Random</button>
+      </div>
+      <hr>
+      <br>
+      <div class="input-adjust">
+        <label for="cw">Change width:-</label>
+        <input type="number" class="cw" id="cwidth">
+        <button class="submit-btn" onclick="change4()">Submit</button>
+        <button class="randominput-btn" onclick="rand4()">Random</button>
+      </div>
+
+      <hr>
+      <br>
+      <div class="input-adjust">
+        <label for="ch">Change height:-</label>
+        <input type="number" class="ch" id="cheight">
+        <button class="submit-btn" onclick="change5()">Submit</button>
+        <button class="randominput-btn" onclick="rand5()">Random</button>
+      </div>
+      <hr>
+      <br>
+      <button value="Reset" class="reset-btn" onclick="reset_values()">Reset</button>
+      <button class="randomall-btn" value="Random-All" onclick="random()">Random-all</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

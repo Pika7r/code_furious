@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 30%;
+            margin: auto;
+            padding: 30px;
+            background-color: #ADEFD1FF;
+            border-radius: 10px;
+            color: white;
+        }
+
+        .box {
+            background-color: #00203FFF;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        input{
+            border-radius: 5px;
+            border: none;
+            padding: 5px;
+            margin: 5px 0px;
+            border: 1px solid rgb(173, 173, 173);
+        }
+        input:hover{
+            outline: 1px solid black;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        button{
+            color: white;
+            background-color: rgb(10, 99, 124);
+            padding: 10px;
+            margin: 5px 0px;
+            border-radius: 10px;
+            border: none;
+            font-weight: bold;
+        }
+        button:active{
+            transform: scale(0.95);
+            background-color: rgb(16, 153, 191);
+        }
+        h1{
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        h4{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+                <h1>Login</h1>
+                <label for="username">Username or Email</label>
+                <input id="username" type="text" placeholder="Email/No:/username.....">
+                <br>
+                <label for="password">Password:-</label>
+                <input id="password" type="text" placeholder="Password.....">
+                <button>Login</button>
+                <h4><a href="">Forgot Password?</a></h4>
+        </div>
+    </div>
+</body>
+
+</html>
