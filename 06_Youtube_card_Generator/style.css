@@ -1,0 +1,199 @@
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0f0f0f;
+    height: 98.1vh;
+}
+
+.container {
+    margin: 10px;
+    padding: 10px;
+    background-color: #0f0f0f;
+    border-radius: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.vno {
+    color: #aaa;
+    display: flex;
+    align-items: center;
+}
+
+.container:hover {
+    background-color: rgb(54, 54, 54);
+
+}
+
+.thumbnail {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+}
+
+.thumbnail img {
+    border-radius: 10px;
+    width: 168px;
+    height: 94px;
+    object-fit: fill;
+}
+
+.timestamp {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    font-weight: 600;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.869);
+    padding: 2px;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.title {
+    color: #f1f1f1;
+}
+
+.cname:hover {
+    color: #f1f1f1;
+}
+
+.info-below-title {
+    color: #aaa;
+}
+
+.burger-menu>svg {
+    fill: transparent;
+    width: 23px;
+}
+
+.container:hover .burger-menu>svg {
+    fill: #ffffff;
+}
+
+
+.card-add-input {
+    color: rgb(255, 255, 255);
+    background: linear-gradient(45deg, red, blue, green);
+    padding: 20px 0px;
+    border-radius: 10px;
+    gap: 10px;
+    flex-direction: column;
+    margin: 10px;
+    position: relative;
+    right: 650px;
+    transition: all 1s linear;
+    width: fit-content;
+    padding: 10px;
+    display: flex;
+    background: linear-gradient(-45deg, #ff0000, #1e00ff, #00ff1a, #ff0000, blue, violet, orange);
+    background-size: 400% 300%;
+    animation: gradient 15s ease infinite;
+}
+
+select {
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.card-add-input input,
+button {
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.add-btn {
+    margin: 10px;
+}
+
+#bro {
+    display: none;
+    color: white;
+}
+
+label:hover {
+    cursor: pointer;
+}
+
+.to {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.center {
+    margin: auto;
+}
+
+.center>button {
+    background-color: green;
+    color: rgb(255, 255, 255);
+    margin: auto;
+}
+
+
+
+@media screen and (max-width: 360px) {
+
+    .vno {
+        display: none;
+    }
+
+    .container {
+        width: auto;
+        padding: 5px;
+        align-items: center;
+    }
+
+    .info {
+        height: 94px;
+        font-size: 11px;
+        gap: 5px;
+    }
+
+    img {
+        width: 128px;
+        height: 92px;
+        object-fit: fill;
+    }
+
+    .card-add-input {
+        padding-left: 15px;
+        width: auto;
+    }
+
+    .to {
+        display: block;
+    }
+
+    .center {
+        margin: auto;
+        text-align: center;
+    }
+}
