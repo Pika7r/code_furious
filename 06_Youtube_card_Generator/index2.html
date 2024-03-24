@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="WhatsApp Image 2024-03-20 at 23.10.01_7ee1fd41.jpg" type="image/x-icon">
+    <title>Code_Furious</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <h1>Youtube Card Generator 😀</h1>
+    <div class="container">
+        <div class="vno">
+            <h4>1</h4>
+        </div>
+        <div class="thumbnail">
+            <img src="https://i.ytimg.com/vi/kJQP7kiw5Fk/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDMnrGS7UUfb2FyiKXj-RL4eGknVg"
+                alt="" class="thumbnail-src">
+            <span class="timestamp">31:20</span>
+        </div>
+        <div class="info">
+            <div class="title">
+                Luis Fonsi - Despacito ft. Daddy Yankee</div>
+            <div class="info-below-title">
+                <span class="cname" title="Luis Fonsi
+                ">Luis Fonsi
+                </span>
+                <span>.</span>
+                <span class="views">1.1B views</span>
+                <span>.</span>
+                <span class="months-old">2 months ago</span>
+            </div>
+        </div>
+        <div class="burger-menu">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                style="pointer-events: none; display: inherit;  height: 100%;">
+                <path
+                    d="M12 16.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zM10.5 12c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5zm0-6c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5z">
+                </path>
+            </svg>
+        </div>
+    </div>
+    <div class="loop" style="display: flex; flex-direction: column-reverse;"></div>
+    <div id="bro">Done vmro</div>
+    <br>
+    <button onclick="add()" class="add-btn">Add Cards</button>
+    <button onclick="cut()">X</button>
+    <div class="card-add-input" id="test">
+        <div>
+            <label class="thumbnail-label" for="thumbnail">Add Thumbnail</label>
+            <input type="file" id="input-file" accept="image/*">
+        </div>
+        <div>
+            <label for="timestamp">Time Stamp</label>
+            <input type="text" id="timestamp" value="00:00">
+        </div>
+        <div>
+            <label for="title">Title</label>
+            <input type="text" id="title" placeholder="Title" value="Your title goes here">
+        </div>
+        <div>
+            <label for="cname">Channel name</label>
+            <input type="text" id="cname" placeholder="Channel name" value="Code_furious">
+        </div>
+        <div>
+            <label for="views">Views</label>
+            <input type="number" id="views" value="1000000">
+        </div>
+        <div class="to">
+            <label for="months-old">Time uploaded</label>
+            <input type="text" id="months-old" value="1">
+            <select id="views-opt">
+                <option>days</option>
+                <option>weeks</option>
+                <option>months</option>
+                <option>years</option>
+                <option>light years</option>
+            </select>
+        </div>
+        <div class="center">
+            <button type="submit" id="submit" onclick="submit()">Submit</button>
+        </div>
+    </div>
+    <script src="script1.js"></script>
+</body>
+
+</html>
