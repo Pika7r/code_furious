@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-image: url("https://i0.wp.com/picjumbo.com/wp-content/uploads/beautiful-nature-mountain-scenery-with-flowers-free-photo.jpg?w=600&quality=80");
+            background-size: cover;
+
+        }
+
+        .form-box {
+            filter: opacity(0.8) blur(7px);
+            background-color: rgba(92, 14, 91, 0.844);
+            width: 300px;
+            height: 50%;
+            border-radius: 40px;
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            color: rgb(228, 228, 228);
+            font-family: Arial, Helvetica, sans-serif;
+            position: absolute;
+            align-items: flex-start;
+
+        }
+
+        h2 {
+            margin-bottom: 40px;
+            font-size: 32px;
+        }
+
+        input {
+            border-radius: 5px;
+            border: 1px solid black;
+            padding: 4px 10px; 
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-box"></div>
+        <div class="form">
+            <h2>Login</h2>
+            <label for="username">Username</label>
+            <input type="text" placeholder="Email / Mobile" id="username">
+
+            <label for="password">Password</label>
+            <input type="password" placeholder="Password" id="ok">
+            <div>
+                <input type="checkbox" onclick="myFunction()" id="chkbox" >
+                <label style="font-size: 12px;" for="chkbox">Show Password</label>
+            </div>
+            <h5>Forgot Password?</h5>
+        </div>
+
+        <script>
+        function myFunction() {
+            var x = document.getElementById("ok");
+            if (x.type === "password") {
+              x.type = "text";
+            } else {
+              x.type = "password";
+            }
+          }
+        </script>
+</body>
+
+</html>
