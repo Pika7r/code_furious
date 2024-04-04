@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: black;
+        }
+
+        .clock {
+            display: flex;
+            gap: 10px;
+            font-size: 60px;
+            font-family: "DotGothic16", sans-serif;
+            background-color: rgb(0, 0, 0);
+            padding: 20px;
+            border-radius: 10px;
+            text-shadow: 0px 0px 10px red;
+            color: rgb(253, 0, 0);
+            box-shadow: 0px 0px 10px yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="clock">
+        <div class="hour"></div>
+        <div class="minute"></div>
+        <div class="second"></div>
+    </div>
+    <script>
+        let ab = document.getElementsByClassName("hour")[0]
+        let ac = document.getElementsByClassName("minute")[0]
+        let ad = document.getElementsByClassName("second")[0]
+        let ae = document.getElementsByClassName("date")[0]
+
+        let a = new Date()
+
+        setInterval(() => {
+            let a = new Date()
+            let h = a.getHours()
+            let m = a.getMinutes()
+            let s = a.getSeconds()
+            let d = a.getDate()
+            ab.innerHTML = `${h}:`
+            ac.innerHTML = `${m}:`
+            ad.innerHTML = `${s}`
+        }, 1000);
+
+        let r = a.toDateString()
+    </script>
+</body>
+
+</html>
