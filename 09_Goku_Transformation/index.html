@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: black;
+        }
+
+        .ok {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            box-shadow: 0px 0px 30px yellow;
+            border-radius: 10px;
+        }
+
+        .ok>img {
+            height: 100%;
+            width: 100%;
+            border-radius: 10px;
+            object-fit: cover;
+            object-position: top center;
+            position: absolute;
+            top: 0px;
+        }
+
+        .rm{
+            transition: all 1s linear;
+        }
+
+        #id1 {
+            display: none;
+        }
+
+        .op {
+            opacity: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ok">
+        <img id="rm"
+            src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2022/06/Goku-True-Ultra-Instinct.jpg"
+            alt="">
+        <img id="id1" src="https://i.pinimg.com/originals/87/d9/04/87d904386e6944d64dd20ce22fa1963b.gif" alt="">
+        <img onclick="a()" class="op op1" id="id2"
+            src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2022/06/Goku-True-Ultra-Instinct.jpg"
+            alt="">
+    </div>
+
+    <script>
+        function a() {
+            let a = setInterval(() => {
+                document.getElementById("id2").classList.toggle("op")
+                document.getElementById("rm").style.display = 'none'
+                console.log(a)
+            }, 50);
+
+
+            setTimeout(() => {
+                clearInterval(a)
+            }, 2000);
+
+            let b = setTimeout(() => {
+                document.getElementById("id1").style.display = 'block'
+            }, 2000);
+
+            setTimeout(() => {
+                document.getElementById("id1").style.display = 'none'
+                document.getElementById("rm").style.display = 'block'
+            }, 7000);
+        }
+    </script>
+</body>
+
+</html>
